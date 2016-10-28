@@ -43,14 +43,6 @@ And some JavaScript-specific features:
 - synchronous and asynchronous threads.
 
 
-%package cache
-Summary: ghcjs cache files
-Requires: ghcjs = %{version}-%{release}
-
-%description cache
-Cache files for building the ghc core libraries for ghcjs.
-
-
 %prep
 %autosetup
 
@@ -74,11 +66,6 @@ rm -r %{buildroot}%{ghclibdir}
 %doc README.markdown
 %{_bindir}/*ghcjs*
 %{_datadir}/%{name}-%{version}
-%exclude %{_datadir}/%{name}-%{version}/lib/cache
-
-
-%files cache
-%{_datadir}/%{name}-%{version}/lib/cache
 
 
 %changelog
