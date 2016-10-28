@@ -24,6 +24,7 @@ BuildRequires:  ghc > 7.10.2
 BuildRequires:  cabal-install
 BuildRequires:  ghc-rpm-macros
 Requires:       nodejs
+Requires:       ghc-compiler = %{ghc_version}
 
 %description
 GHCJS is a Haskell to JavaScript compiler that uses the GHC API.
