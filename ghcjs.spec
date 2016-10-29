@@ -23,6 +23,7 @@ Source0:        %{name}-%{version}.tar.gz
 BuildRequires:  ghc > 7.10.2
 BuildRequires:  cabal-install
 BuildRequires:  ghc-rpm-macros
+BuildRequires:  happy
 Requires:       nodejs
 Requires:       ghc-compiler = %{ghc_version}
 
